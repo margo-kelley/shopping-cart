@@ -1,7 +1,3 @@
-// Ex 3 - write out all items with their stock number
-// provide a button and use onClick to move 1 item into the Shopping Cart
-// use React.useState to keep track of items in the Cart.
-// list out the Cart items in another column
 function NavBar({ menuitems }) {
   const { Card, Button } = ReactBootstrap;
   const [stock, setStock] = React.useState(menuitems);
@@ -56,11 +52,11 @@ function Cart({ cartitems }) {
 }
 
 const menuItems = [
-  { name: "apple", instock: 2 },
-  { name: "pineapple", instock: 3 },
+  { name: "apple", instock: 10 },
+  { name: "pineapple", instock: 7 },
   { name: "pear", instock: 0 },
-  { name: "peach", instock: 3 },
-  { name: "orange", instock: 1 },
+  { name: "peach", instock: 5 },
+  { name: "orange", instock: 3 },
 ];
 ReactDOM.render(
   <NavBar menuitems={menuItems} />,
